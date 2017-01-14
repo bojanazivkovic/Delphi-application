@@ -1,0 +1,114 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Login'
+  ClientHeight = 187
+  ClientWidth = 329
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 29
+    Top = 51
+    Width = 85
+    Height = 13
+    Caption = 'Korisnicko ime:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 68
+    Top = 91
+    Width = 46
+    Height = 13
+    Caption = 'Lozinka:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object user: TEdit
+    Left = 144
+    Top = 48
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object pass: TEdit
+    Left = 144
+    Top = 88
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object LoginBtn: TButton
+    Left = 144
+    Top = 136
+    Width = 50
+    Height = 25
+    Caption = 'Login!'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = okClick
+  end
+  object CancelBtn: TButton
+    Left = 215
+    Top = 136
+    Width = 50
+    Height = 25
+    Caption = 'Cancel'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = CancelBtnClick
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=baza.mdb;Persist Se' +
+      'curity Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Top = 160
+  end
+  object ZaposleniDS: TDataSource
+    DataSet = ZaposleniTbl
+    Left = 32
+    Top = 160
+  end
+  object ZaposleniTbl: TADOTable
+    Connection = ADOConnection1
+    TableName = 'Zaposleni'
+    Left = 64
+    Top = 160
+  end
+  object Q: TADOQuery
+    Connection = ADOConnection1
+    DataSource = ZaposleniDS
+    Parameters = <>
+    Left = 96
+    Top = 160
+  end
+end

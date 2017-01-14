@@ -1,0 +1,180 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 251
+  ClientWidth = 346
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Engine: TfrxReport
+    Version = '4.5'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 41035.490881319440000000
+    ReportOptions.LastChange = 41035.490881319440000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 8
+    Top = 208
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+  object frxDesigner1: TfrxDesigner
+    DefaultScriptLanguage = 'PascalScript'
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = -13
+    DefaultFont.Name = 'Arial'
+    DefaultFont.Style = []
+    DefaultLeftMargin = 10.000000000000000000
+    DefaultRightMargin = 10.000000000000000000
+    DefaultTopMargin = 10.000000000000000000
+    DefaultBottomMargin = 10.000000000000000000
+    DefaultPaperSize = 9
+    DefaultOrientation = poPortrait
+    GradientEnd = 11982554
+    GradientStart = clWindow
+    Restrictions = []
+    RTLLanguage = False
+    Left = 40
+    Top = 208
+  end
+  object DB1: TfrxDBDataset
+    UserName = 'DB1'
+    CloseDataSource = False
+    Left = 16
+    Top = 16
+  end
+  object DB2: TfrxDBDataset
+    UserName = 'DB2'
+    CloseDataSource = False
+    Left = 16
+    Top = 56
+  end
+  object DB3: TfrxDBDataset
+    UserName = 'DB3'
+    CloseDataSource = False
+    Left = 16
+    Top = 96
+  end
+  object frxPDFExport1: TfrxPDFExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    OpenAfterExport = True
+    PrintOptimized = False
+    Outline = False
+    Background = False
+    HTMLTags = True
+    Author = 'FastReport'
+    Subject = 'FastReport PDF export'
+    Creator = 'FastReport (http://www.fast-report.com)'
+    ProtectionFlags = [ePrint, eModify, eCopy, eAnnot]
+    HideToolbar = False
+    HideMenubar = False
+    HideWindowUI = False
+    FitWindow = False
+    CenterWindow = False
+    PrintScaling = False
+    Left = 304
+  end
+  object frxHTMLExport1: TfrxHTMLExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    FixedWidth = True
+    Background = False
+    Centered = False
+    EmptyLines = True
+    Left = 304
+    Top = 32
+  end
+  object frxXLSExport1: TfrxXLSExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    AsText = False
+    Background = True
+    FastExport = True
+    PageBreaks = True
+    EmptyLines = True
+    SuppressPageHeadersFooters = False
+    Left = 304
+    Top = 64
+  end
+  object frxXMLExport1: TfrxXMLExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Background = True
+    Creator = 'FastReport'
+    EmptyLines = True
+    SuppressPageHeadersFooters = False
+    Left = 304
+    Top = 96
+  end
+  object frxRTFExport1: TfrxRTFExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Wysiwyg = True
+    Creator = 'FastReport'
+    SuppressPageHeadersFooters = False
+    HeaderFooterMode = hfText
+    AutoSize = False
+    Left = 304
+    Top = 136
+  end
+  object frxBMPExport1: TfrxBMPExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Left = 304
+    Top = 168
+  end
+  object frxJPEGExport1: TfrxJPEGExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Left = 304
+    Top = 208
+  end
+  object frxTIFFExport1: TfrxTIFFExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Left = 264
+    Top = 16
+  end
+  object frxGIFExport1: TfrxGIFExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Left = 264
+    Top = 56
+  end
+  object frxCSVExport1: TfrxCSVExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    Separator = ';'
+    OEMCodepage = False
+    Left = 264
+    Top = 96
+  end
+end

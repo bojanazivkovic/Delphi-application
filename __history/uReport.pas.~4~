@@ -1,0 +1,40 @@
+unit uReport;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, frxExportCSV, frxExportImage, frxExportRTF, frxExportXML,
+  frxExportXLS, frxExportHTML, frxClass, frxExportPDF, frxDBSet, frxDesgn;
+
+type
+  TForm4 = class(TForm)
+    Engine: TfrxReport;
+    frxDesigner1: TfrxDesigner;
+    DB1: TfrxDBDataset;
+    DB2: TfrxDBDataset;
+    DB3: TfrxDBDataset;
+    frxPDFExport1: TfrxPDFExport;
+    frxHTMLExport1: TfrxHTMLExport;
+    frxXLSExport1: TfrxXLSExport;
+    frxXMLExport1: TfrxXMLExport;
+    frxRTFExport1: TfrxRTFExport;
+    frxBMPExport1: TfrxBMPExport;
+    frxJPEGExport1: TfrxJPEGExport;
+    frxTIFFExport1: TfrxTIFFExport;
+    frxGIFExport1: TfrxGIFExport;
+    frxCSVExport1: TfrxCSVExport;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.dfm}
+
+end.
